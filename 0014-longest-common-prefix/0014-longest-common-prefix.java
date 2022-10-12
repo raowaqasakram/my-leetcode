@@ -1,5 +1,5 @@
 class Solution {
-public static String longestCommonPrefix(String[] strs) {
+ public static String longestCommonPrefix(String[] strs) {
         char[] firstString = strs[0].toCharArray();
 
         StringBuilder prefix = new StringBuilder();
@@ -8,8 +8,8 @@ public static String longestCommonPrefix(String[] strs) {
             boolean doesPrefixExist = false;
             tempPrefixString.append(c);
 
-            for (int j = 0; j <= strs.length - 1; j++) {
-                if (strs[j].startsWith(String.valueOf(tempPrefixString))) {
+            for (String string:strs) {
+                if (string.startsWith(String.valueOf(tempPrefixString))) {
                     doesPrefixExist = true;
                 } else {
                     doesPrefixExist = false;
@@ -24,5 +24,6 @@ public static String longestCommonPrefix(String[] strs) {
         }
         return prefix.toString();
     }
+
 
 }
