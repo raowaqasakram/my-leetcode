@@ -1,11 +1,11 @@
 class Solution {
  public static String longestCommonPrefix(String[] strs) {
         
-     // Arrays.sort(strs);
-        char[] firstString = strs[0].toCharArray();
+        Arrays.sort(strs);
+        char[] stringWithSmallestLength = strs[0].toCharArray();
         StringBuilder prefix = new StringBuilder();
         StringBuilder tempPrefixString = new StringBuilder();
-        for (char c : firstString) {
+        for (char c : stringWithSmallestLength) {
             tempPrefixString.append(c);
 
             for (String string:strs) {
