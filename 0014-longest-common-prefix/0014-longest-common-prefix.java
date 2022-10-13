@@ -6,7 +6,6 @@ char[] firstString = strs[0].toCharArray();
         StringBuilder prefix = new StringBuilder();
         StringBuilder tempPrefixString = new StringBuilder();
         for (char c : firstString) {
-            boolean doesPrefixExist = false;
             tempPrefixString.append(c);
 
             for (String string:strs) {
@@ -14,8 +13,6 @@ char[] firstString = strs[0].toCharArray();
                      return prefix.toString();
                 }  
             }
-
-         
                 prefix.append(c);
             
         }
