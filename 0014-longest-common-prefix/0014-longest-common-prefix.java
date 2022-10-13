@@ -6,10 +6,8 @@ class Solution {
         StringBuilder prefix = new StringBuilder();
         StringBuilder tempPrefixString = new StringBuilder();
         for (char c : stringWithSmallestLength) {
-            tempPrefixString.append(c);
-
             for (String string:strs) {
-                if (!string.startsWith(String.valueOf(tempPrefixString))) {
+                if (!string.startsWith(String.valueOf(prefix)+c)) {
                      return prefix.toString();
                 }  
             }
