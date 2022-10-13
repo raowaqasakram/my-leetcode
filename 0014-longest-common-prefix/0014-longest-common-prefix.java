@@ -12,17 +12,16 @@ char[] firstString = strs[0].toCharArray();
             for (String string:strs) {
                 if (string.startsWith(String.valueOf(tempPrefixString))) {
                     doesPrefixExist = true;
-                } else {
-                    // doesPrefixExist = false;
+                } else 
                             return prefix.toString();
 
 
-                }
+                
             }
 
-            if (doesPrefixExist) {
+         
                 prefix.append(c);
-            }
+            
         }
         return prefix.toString();
     }
