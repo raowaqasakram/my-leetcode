@@ -13,8 +13,7 @@ char[] firstString = strs[0].toCharArray();
                 if (string.startsWith(String.valueOf(tempPrefixString))) {
                     doesPrefixExist = true;
                 } else {
-                    doesPrefixExist = false;
-                    // break;
+                    // doesPrefixExist = false;
                             return prefix.toString();
 
 
