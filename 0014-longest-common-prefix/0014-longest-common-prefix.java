@@ -14,7 +14,9 @@ char[] firstString = strs[0].toCharArray();
                     doesPrefixExist = true;
                 } else {
                     doesPrefixExist = false;
-                    break;
+                    // break;
+                            return prefix.toString();
+
 
                 }
             }
