@@ -10,13 +10,9 @@ char[] firstString = strs[0].toCharArray();
             tempPrefixString.append(c);
 
             for (String string:strs) {
-                if (string.startsWith(String.valueOf(tempPrefixString))) {
-                    doesPrefixExist = true;
-                } else 
-                            return prefix.toString();
-
-
-                
+                if (!string.startsWith(String.valueOf(tempPrefixString))) {
+                     return prefix.toString();
+                }  
             }
 
          
