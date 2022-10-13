@@ -3,7 +3,7 @@ class Solution {
         
         Arrays.sort(strs);
         char[] stringWithSmallestLength = strs[0].toCharArray();
-        StringBuilder prefix = new StringBuilder();
+        StringBuilder prefix = new StringBuilder("");
         for (char c : stringWithSmallestLength) {
             for (String string:strs) {
                 if (!string.startsWith(prefix.toString()+c)) {
