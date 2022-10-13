@@ -6,7 +6,7 @@ class Solution {
         StringBuilder prefix = new StringBuilder();
         for (char c : stringWithSmallestLength) {
             for (String string:strs) {
-                if (!string.startsWith(String.valueOf(prefix)+c)) {
+                if (!string.startsWith(prefix.toString()+c)) {
                      return prefix.toString();
                 }  
             }
